@@ -1,0 +1,125 @@
+Starting Dynare (version 4.5.6).
+Starting preprocessing of the model file ...
+Found 10 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+pi    		 0.08
+x     		 2.1684e-19
+v     		 0
+s     		 0
+rn    		 0.0900503
+i     		 0.0900503
+q     		 -1.15648e-16
+r     		 0
+us    		 0
+vstar 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+       1.712e-16        1.712e-16                0
+          0.4529           0.4529                0
+             0.7              0.7                0
+          0.7071           0.7071                0
+          0.7931           0.7931                0
+            1.01             1.01                0
+           1.176            1.176                0
+           2.784            2.784                0
+
+
+There are 3 eigenvalue(s) larger than 1 in modulus 
+for 3 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         10
+  Number of stochastic shocks: 2
+  Number of state variables:   5
+  Number of jumpers:           3
+  Number of static variables:  3
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables       eps_s     eps_i
+eps_s        1.000000  0.000000
+eps_i        0.000000  0.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                  pi               x               v               s              rn               i               q               r              us           vstar
+Constant                    0.080000               0               0               0        0.090050        0.090050               0               0               0               0
+v(-1)                       0.194275        0.148917        0.047120        0.100000       -0.659077        0.155420       -0.775384       -0.086633               0       -0.101010
+q(-1)                      -0.194275       -0.148917       -0.148130               0       -0.340923       -0.155420        0.775384        0.086633               0               0
+us(-1)                             0               0       -0.707071        0.700000               0               0               0               0        0.700000       -0.707071
+vstar(-1)                  -0.194275       -0.148917        0.659951        0.200000        0.659077       -0.155420        0.775384        0.086633               0        0.808081
+pi(-1)                      0.322417       -0.387302       -0.384415               0       -0.058154        0.257934       -0.068416        0.215372               0               0
+eps_s                              0               0       -1.010101        1.000000               0               0               0               0        1.000000       -1.010101
+eps_i                      -0.298475       -0.587937       -0.590964               0       -0.883530        0.761220       -1.039447        0.770324               0               0
+[Warning: Aggregate variance and sum of variances by shocks differ by
+more than 0.01 %] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('th_autocovariances', 'I:\Dynare\4.5.6\matlab\th_autocovariances.m', 206)" style="font-weight:bold">th_autocovariances</a> (<a href="matlab: opentoline('I:\Dynare\4.5.6\matlab\th_autocovariances.m',206,0)">line 206</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('disp_th_moments', 'I:\Dynare\4.5.6\matlab\disp_th_moments.m', 39)" style="font-weight:bold">disp_th_moments</a> (<a href="matlab: opentoline('I:\Dynare\4.5.6\matlab\disp_th_moments.m',39,0)">line 39</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stoch_simul', 'I:\Dynare\4.5.6\matlab\stoch_simul.m', 178)" style="font-weight:bold">stoch_simul</a> (<a href="matlab: opentoline('I:\Dynare\4.5.6\matlab\stoch_simul.m',178,0)">line 178</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('longterm_debt_surplus_rule', 'C:\Users\Herbert\Dropbox\HerbertXin\Codes\Simple Model\longterm_debt_surplus_rule.m', 199)" style="font-weight:bold">longterm_debt_surplus_rule</a> (<a href="matlab: opentoline('C:\Users\Herbert\Dropbox\HerbertXin\Codes\Simple Model\longterm_debt_surplus_rule.m',199,0)">line 199</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'I:\Dynare\4.5.6\matlab\dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('I:\Dynare\4.5.6\matlab\dynare.m',235,0)">line 235</a>)] 
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+pi             0.0800     0.0000     0.0000
+x              0.0000     0.0000     0.0000
+v              0.0000     3.4413    11.8423
+s              0.0000     1.1745     1.3795
+rn             0.0901     0.0000     0.0000
+i              0.0901     0.0000     0.0000
+q             -0.0000     0.0000     0.0000
+r              0.0000     0.0000     0.0000
+us             0.0000     1.4003     1.9608
+vstar          0.0000     3.4413    11.8423
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+          eps_s   eps_i
+pi        15.84   84.16
+x          0.03   99.97
+v        100.00    0.00
+s        100.00    0.00
+rn         2.50   97.50
+i          2.15   97.85
+q         16.78   83.22
+r          0.16   99.84
+us       100.00    0.00
+vstar    100.00    0.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables         v       s      us   vstar
+v            1.0000 -0.1429 -0.8138  1.0000
+s           -0.1429  1.0000  0.6915 -0.1429
+us          -0.8138  0.6915  1.0000 -0.8138
+vstar        1.0000 -0.1429 -0.8138  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order         1       2       3       4       5
+v        0.9412  0.8294  0.7012  0.5761  0.4636
+s        0.4514  0.1402 -0.0261 -0.1061 -0.1364
+us       0.7000  0.4900  0.3430  0.2401  0.1681
+vstar    0.9412  0.8294  0.7012  0.5761  0.4636
+Total computing time : 0h00m01s
+Note: warning(s) encountered in MATLAB/Octave code

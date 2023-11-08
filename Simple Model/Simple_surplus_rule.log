@@ -1,0 +1,94 @@
+Starting Dynare (version 4.5.6).
+Starting preprocessing of the model file ...
+Found 6 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+pi 		 0.08
+x  		 -0.0008
+i  		 0.0900503
+v  		 -2.04146e-17
+s  		 -7.1451e-18
+r  		 0.0100503
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+          0.2926           0.2926                0
+          0.6601           0.6601                0
+           1.667            1.667                0
+           2.071            2.071                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         6
+  Number of stochastic shocks: 2
+  Number of state variables:   2
+  Number of jumpers:           2
+  Number of static variables:  3
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables       eps_s     eps_i
+eps_s        1.000000  0.000000
+eps_i        0.000000  0.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                  pi               x               i               v               s               r
+Constant                    0.080000       -0.000800        0.090050               0               0        0.010050
+v(-1)                              0               0               0        0.660101        0.350000               0
+pi(-1)                      0.292642       -0.499498        0.438964        0.143365               0        0.353324
+eps_s                              0               0               0       -1.000000        1.000000               0
+eps_i                      -0.292642       -0.500502        0.561036        0.856635               0        0.646676
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+pi             0.0800     0.0000     0.0000
+x             -0.0008     0.0000     0.0000
+i              0.0901     0.0000     0.0000
+v              0.0000     1.3312     1.7722
+s              0.0000     1.1032     1.2171
+r              0.0101     0.0000     0.0000
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+       eps_s   eps_i
+pi      0.00  100.00
+x       0.00  100.00
+i       0.00  100.00
+v     100.00    0.00
+s     100.00    0.00
+r       0.00  100.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables         v       s
+v            1.0000 -0.4021
+s           -0.4021  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order         1       2       3       4       5
+v        0.6601  0.4357  0.2876  0.1899  0.1253
+s       -0.1698 -0.1121 -0.0740 -0.0488 -0.0322
+Total computing time : 0h00m02s
